@@ -10,7 +10,7 @@ import Image from "next/image";
 
 export default function NavBar() {
   return (
-    <div className="fixed top-0 left-0 right-0 mb-2 bg-gray-900 opacity-100 backdrop-blur-[10px] border-b-gray-300 border-1 z-[999]">
+    <div className="fixed top-0 left-0 right-0 mb-2 bg-white opacity-100 backdrop-blur-[10px] border-b-gray-300 border-1 z-[999]">
       <div className="w-auto h-[55px] text-[17px] flex items-center content-between justify-between max-w-[70%] mx-auto z-[100]">
         <Link
           href={"/"}
