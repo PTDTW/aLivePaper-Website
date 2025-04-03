@@ -27,7 +27,7 @@ export default function Home() {
           />
           <div className="flex flex-col items-center gap-y-2">
             <div className="font-semibold text-3xl bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text">
-              專為 Macos 用戶提供的動態桌布軟體
+              專為 MacOS 用戶提供的動態桌布軟體
             </div>
             <div className="text-gray-600/60">
               用簡單、免費、快速的方式設置屬於自己得動態桌布
@@ -38,6 +38,9 @@ export default function Home() {
             >
               立即下載
             </Link>
+            <div className="text-[12px] text-gray-500">
+              MacOS 12.0(Monterey) +
+            </div>
           </div>
         </motion.div>
 
@@ -45,20 +48,20 @@ export default function Home() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="mt-[14rem] relative"
+          className="mt-[14rem]"
         >
           {/* 背景模糊圓形 */}
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 0.4 }}
-            transition={{ duration: 0.8 }}
-            className="absolute top-1/5 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[300px] bg-pink-300 rounded-full blur-3xl z-[-1]"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 0.4, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="absolute left-1/2 -translate-x-1/2 -translate-y-[100px] w-[700px] h-[300px] bg-pink-300 rounded-full blur-3xl z-[-1]"
           ></motion.div>
 
           <Image
             src={Hero}
             alt="HeroImg"
-            className="w-200 h-auto rounded-lg shadow-xl shadow-gray-900/90"
+            className="w-200 h-auto rounded-lg shadow-xl shadow-gray-900/90 z-1"
           />
         </motion.div>
       </div>
